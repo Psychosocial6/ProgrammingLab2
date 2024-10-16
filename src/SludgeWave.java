@@ -1,8 +1,4 @@
-import ru.ifmo.se.pokemon.Effect;
-import ru.ifmo.se.pokemon.Pokemon;
-import ru.ifmo.se.pokemon.SpecialMove;
-import ru.ifmo.se.pokemon.Type;
-
+import ru.ifmo.se.pokemon.*;
 import java.util.Random;
 
 public class SludgeWave extends SpecialMove {
@@ -17,7 +13,7 @@ public class SludgeWave extends SpecialMove {
         int percentage = random.nextInt(1, 101);
         if (percentage <= 10) {
             Effect.poison(pokemon);
-            System.out.println("Применен эффект poison");
+            //System.out.println("Применен эффект poison");
         }
     }
 

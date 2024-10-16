@@ -1,7 +1,4 @@
-import ru.ifmo.se.pokemon.Pokemon;
-import ru.ifmo.se.pokemon.Stat;
-import ru.ifmo.se.pokemon.StatusMove;
-import ru.ifmo.se.pokemon.Type;
+import ru.ifmo.se.pokemon.*;
 
 public class CalmMind extends StatusMove {
 
@@ -13,7 +10,12 @@ public class CalmMind extends StatusMove {
     protected void applySelfEffects(Pokemon pokemon) {
         pokemon.setMod(Stat.SPECIAL_ATTACK, 1);
         pokemon.setMod(Stat.SPECIAL_DEFENSE, 1);
-        System.out.println("Повышение special attack и special defence на 1");
+        //System.out.println("Повышение special attack и special defence на 1");
+    }
+
+    @Override
+    protected boolean checkAccuracy(Pokemon pokemon, Pokemon pokemon1) {
+        return true;
     }
 
     @Override

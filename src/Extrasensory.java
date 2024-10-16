@@ -1,8 +1,4 @@
-import ru.ifmo.se.pokemon.Effect;
-import ru.ifmo.se.pokemon.Pokemon;
-import ru.ifmo.se.pokemon.SpecialMove;
-import ru.ifmo.se.pokemon.Type;
-
+import ru.ifmo.se.pokemon.*;
 import java.util.Random;
 
 public class Extrasensory extends SpecialMove {
@@ -17,7 +13,7 @@ public class Extrasensory extends SpecialMove {
         int percentage = random.nextInt(1, 101);
         if (percentage <= 10) {
             Effect.flinch(pokemon);
-            System.out.println("Применен эффект flinch");
+            //System.out.println("Применен эффект flinch");
         }
     }
 
@@ -25,5 +21,4 @@ public class Extrasensory extends SpecialMove {
     protected String describe() {
         return "Использует атаку Extrasensory";
     }
-
 }

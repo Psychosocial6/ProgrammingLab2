@@ -9,7 +9,12 @@ public class Confide extends StatusMove {
     @Override
     protected void applyOppEffects(Pokemon pokemon) {;
         pokemon.setMod(Stat.SPECIAL_ATTACK, -1);
-        System.out.println("Специальная атака уменьшена на 1");
+        //System.out.println("Специальная атака уменьшена на 1");
+    }
+
+    @Override
+    protected boolean checkAccuracy(Pokemon pokemon, Pokemon pokemon1) {
+        return true;
     }
 
     @Override

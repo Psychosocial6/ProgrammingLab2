@@ -1,7 +1,5 @@
-import ru.ifmo.se.pokemon.Effect;
-import ru.ifmo.se.pokemon.Pokemon;
-import ru.ifmo.se.pokemon.StatusMove;
-import ru.ifmo.se.pokemon.Type;
+import ru.ifmo.se.pokemon.*;
+import java.util.Random;
 
 public class Sing extends StatusMove {
 
@@ -11,8 +9,11 @@ public class Sing extends StatusMove {
 
     @Override
     protected void applyOppEffects(Pokemon pokemon) {
-        Effect.sleep(pokemon);
-        System.out.println("Применен эффект sleep");
+        Random random = new Random();
+        int moves = random.nextInt(2, 5);
+        Effect effect = new Effect().chance(1).turns(moves);
+        effect.sleep(pokemon);
+        //System.out.println("Применен эффект sleep");
     }
 
     @Override
