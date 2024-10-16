@@ -2,7 +2,6 @@ import ru.ifmo.se.pokemon.*;
 
 public class Main {
 
-    int x = 12;
     public static void main(String[] args) {
         Battle battle = new Battle();
         Pokemon tornadus = new Tornadus("Tornadus", 100);
