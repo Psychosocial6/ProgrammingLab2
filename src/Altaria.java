@@ -2,12 +2,12 @@ import ru.ifmo.se.pokemon.*;
 
 public class Altaria extends Swablu {
 
-    private double hp = 75;
-    private double attack = 70;
-    private double defense = 90;
-    private double specialAttack = 70;
-    private double specialDefence = 105;
-    private double speed = 80;
+    private static double hp = 75;
+    private static double attack = 70;
+    private static double defense = 90;
+    private static double specialAttack = 70;
+    private static double specialDefence = 105;
+    private static double speed = 80;
 
     public Altaria(String name, int level) {
         super(name, level);

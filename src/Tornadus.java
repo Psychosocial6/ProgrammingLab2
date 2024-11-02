@@ -2,12 +2,12 @@ import ru.ifmo.se.pokemon.*;
 
 public class Tornadus extends Pokemon {
 
-    private double hp = 79;
-    private double attack = 115;
-    private double defense = 70;
-    private double specialAttack = 125;
-    private double specialDefence = 80;
-    private double speed = 111;
+    private static double hp = 79;
+    private static double attack = 115;
+    private static double defense = 70;
+    private static double specialAttack = 125;
+    private static double specialDefence = 80;
+    private static double speed = 111;
 
     public Tornadus(String name, int level) {
         super(name, level);

@@ -2,12 +2,12 @@ import ru.ifmo.se.pokemon.*;
 
 public class Swablu extends Pokemon {
 
-    private double hp = 45;
-    private double attack = 40;
-    private double defense = 60;
-    private double specialAttack = 40;
-    private double specialDefence = 75;
-    private double speed = 50;
+    private static double hp = 45;
+    private static double attack = 40;
+    private static double defense = 60;
+    private static double specialAttack = 40;
+    private static double specialDefence = 75;
+    private static double speed = 50;
 
     public Swablu(String name, int level) {
         super(name, level);

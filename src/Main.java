@@ -4,9 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
         Battle battle = new Battle();
-        Pokemon tornadus = new Tornadus("Tornadus", 100);
-        Pokemon altaria = new Altaria("Altaria", 40);
-        Pokemon kirlia = new Kirlia("Kirlia", 99);
+        Tornadus tornadus = new Tornadus("Tornadus", 100);
+        Altaria altaria = new Altaria("Altaria", 40);
+        Kirlia kirlia = new Kirlia("Kirlia", 99);
 
         Ralts ralts = new Ralts("Ralts", 99);
         Swablu swablu = new Swablu("Swablu", 40);

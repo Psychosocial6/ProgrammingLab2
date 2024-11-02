@@ -2,12 +2,12 @@ import ru.ifmo.se.pokemon.*;
 
 public class Ralts extends Pokemon {
 
-    private double hp = 28;
-    private double attack = 25;
-    private double defense = 25;
-    private double specialAttack = 45;
-    private double specialDefence = 35;
-    private double speed = 40;
+    private static double hp = 28;
+    private static double attack = 25;
+    private static double defense = 25;
+    private static double specialAttack = 45;
+    private static double specialDefence = 35;
+    private static double speed = 40;
 
     public Ralts(String name, int level) {
         super(name, level);
