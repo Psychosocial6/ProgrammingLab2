@@ -1,9 +1,15 @@
+package Moves;
+
 import ru.ifmo.se.pokemon.*;
 
 public class DrainingKiss extends SpecialMove {
 
-    public DrainingKiss(Type type, double power, double accuracy) {
-        super(type, power, accuracy);
+    private static final Type TYPE = Type.FAIRY;
+    private static final double POWER = 50;
+    private static final double ACCURACY = 1;
+
+    public DrainingKiss() {
+        super(TYPE, POWER, ACCURACY);
     }
 
     @Override
@@ -16,7 +22,6 @@ public class DrainingKiss extends SpecialMove {
         double specialDefence = pokemon.getStat(Stat.DEFENSE);
         double speed = pokemon.getStat(Stat.SPEED);
         pokemon.setStats(hp + 0.75D * damage, attack, defense, specialAttack, specialDefence, speed);
-        //System.out.println("Исцеляет " + 0.75D * damage + " hp");
         return 0.25D * damage;
     }
 
@@ -30,7 +35,6 @@ public class DrainingKiss extends SpecialMove {
         double specialDefence = pokemon.getStat(Stat.DEFENSE);
         double speed = pokemon.getStat(Stat.SPEED);
         pokemon.setStats(hp + 0.75D * damage, attack, defense, specialAttack, specialDefence, speed);
-        //System.out.println("Исцеляет " + 0.75D * damage + " hp");
         return 0.25D * damage;
     }
 

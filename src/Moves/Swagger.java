@@ -1,11 +1,17 @@
+package Moves;
+
 import ru.ifmo.se.pokemon.*;
 
 import java.util.Random;
 
 public class Swagger extends StatusMove {
 
-    public Swagger(Type type, double power, double accuracy) {
-        super(type, power, accuracy);
+    private static final Type TYPE = Type.NORMAL;
+    private static final double POWER = 0;
+    private static final double ACCURACY = 0.85D;
+
+    public Swagger() {
+        super(TYPE, POWER, ACCURACY);
     }
 
     @Override
@@ -15,7 +21,6 @@ public class Swagger extends StatusMove {
         int turns = random.nextInt(2, 6);
         Effect effect = new Effect().turns(turns);
         effect.confuse(pokemon);
-        //System.out.println("Атака увеличена на 2, применен эффект confuse");
     }
 
     @Override

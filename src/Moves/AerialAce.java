@@ -1,9 +1,15 @@
+package Moves;
+
 import ru.ifmo.se.pokemon.*;
 
 public class AerialAce extends PhysicalMove {
 
-    public AerialAce(Type type, double power, double accuracy) {
-        super(type, power, accuracy);
+    private static final Type TYPE = Type.FLYING;
+    private static final double POWER = 60;
+    private static final double ACCURACY = 0;
+
+    public AerialAce() {
+        super(TYPE, POWER, ACCURACY);
     }
 
     @Override

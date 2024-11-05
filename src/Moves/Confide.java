@@ -1,15 +1,20 @@
+package Moves;
+
 import ru.ifmo.se.pokemon.*;
 
 public class Confide extends StatusMove {
 
-    public Confide(Type type, double power, double accuracy) {
-        super(type, power, accuracy);
+    private static final Type TYPE = Type.NORMAL;
+    private static final double POWER = 0;
+    private static final double ACCURACY = 0;
+
+    public Confide() {
+        super(TYPE, POWER, ACCURACY);
     }
 
     @Override
     protected void applyOppEffects(Pokemon pokemon) {;
         pokemon.setMod(Stat.SPECIAL_ATTACK, -1);
-        //System.out.println("Специальная атака уменьшена на 1");
     }
 
     @Override

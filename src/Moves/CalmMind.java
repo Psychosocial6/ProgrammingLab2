@@ -1,16 +1,21 @@
+package Moves;
+
 import ru.ifmo.se.pokemon.*;
 
 public class CalmMind extends StatusMove {
 
-    public CalmMind(Type type, double power, double accuracy) {
-        super(type, power, accuracy);
+    private static final Type TYPE = Type.PSYCHIC;
+    private static final double POWER = 0;
+    private static final double ACCURACY = 1;
+
+    public CalmMind() {
+        super(TYPE, POWER, ACCURACY);
     }
 
     @Override
     protected void applySelfEffects(Pokemon pokemon) {
         pokemon.setMod(Stat.SPECIAL_ATTACK, 1);
         pokemon.setMod(Stat.SPECIAL_DEFENSE, 1);
-        //System.out.println("Повышение special attack и special defence на 1");
     }
 
     @Override

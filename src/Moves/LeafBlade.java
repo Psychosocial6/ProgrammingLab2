@@ -1,10 +1,16 @@
+package Moves;
+
 import ru.ifmo.se.pokemon.*;
 import java.util.Random;
 
 public class LeafBlade extends PhysicalMove {
 
-    public LeafBlade(Type type, double power, double accuracy) {
-        super(type, power, accuracy);
+    private static final Type TYPE = Type.GRASS;
+    private static final double POWER = 90;
+    private static final double ACCURACY = 1;
+
+    public LeafBlade() {
+        super(TYPE, POWER, ACCURACY);
     }
 
     @Override
